@@ -1,13 +1,46 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0rem;
+  padding: 0rem;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --color-l-bg:  rgb(234, 232, 232);
+  --color-l-bg-variant: rgb(101, 99, 99);
+  --color-primary: rgb(255, 255, 255);
+  --color-primary-variant: rgb(0, 205, 89);
+  --color-secondary: rgb(3, 166, 33);
+  --color-secondary-variant: rgb(2, 96, 19);
+  --color-light:rgb(86, 82, 82);
+  --transition: all 400ms ease;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+body{
+  background-color: rgb(240, 240, 240);
+}
+.btn{
+  margin: .5rem;
+  padding: .5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+.btn:hover{
+  cursor: pointer;
+  font-size: 1.01rem;
+  transition: var(--transition);
+  background-color: var(--color-secondary-variant);
+}
+

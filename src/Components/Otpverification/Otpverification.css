@@ -1,0 +1,95 @@
+.otpVerification{
+    height: 20rem;
+    width: 100%;
+    background-color: var(--color-l-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.otpVerification__close:hover{
+    cursor: pointer;
+}
+.otpVerification>h1{
+    font-size: 1.5rem;
+    margin: .5rem;
+    padding: .5rem;
+}
+.otpVerification>p{
+    font-size: 1rem;
+    color: var(--color-light);
+    margin: .5rem;
+    padding: .5rem;
+}
+.otpVerification__otp{
+    display: flex;
+    align-items: center;
+}
+.otpVerification__otp__div--active{
+    height: 3.1rem;
+    width: 3rem;
+    background-color: black;
+    margin: .5rem;
+}
+.otpVerification__otp__div{
+    height: 3.1rem;
+    width: 3rem;
+    background-color: rgb(145, 143, 143);
+    margin: .5rem;
+
+}
+.otpVerification__otp input{
+    position: relative;
+    height: 95%;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    caret-color: transparent;
+}
+.otpVerification__link{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+
+}
+.otpVerification__link small{
+    margin: .5rem;
+    padding: .5rem;
+    font-size: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.otpVerification--btn{
+    margin: 1rem;
+}
+@media screen and (max-width: 991px){
+    .otpVerification>h1{
+        font-size: 1rem;
+        margin: .2rem;
+        padding: .2rem;
+    }
+    .otpVerification>p{
+        font-size: .7rem;
+        margin: .2rem;
+        padding: .2rem;
+    }
+    .otpVerification__link{
+        margin: .1rem;
+    
+    }
+    .otpVerification__link small{
+        margin: .1rem;
+        padding: .1rem;
+        font-size: .7rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .otpVerification__otp__div--active{
+        width: 2rem;
+        margin: .2rem;
+    }
+    .otpVerification__otp__div{
+        width: 2rem;
+        margin: .2rem;
+    
+    }
+  }
